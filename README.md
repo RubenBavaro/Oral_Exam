@@ -60,7 +60,8 @@ This project is built using:
 * **CSS** – For styling and layout of the interface.
 * **JavaScript** – For handling user interactions and managing API calls.
 * **Fetch API** – To perform GET requests to the server and retrieve data in real-time.
-* **Python** – To code 
+*  **Python** – The server-side application logic is written in Python, which powers data handling, business logic, and integration with external services. Python's versatility and extensive standard library support make it a great choice for developing scalable and maintainable backend code.
+* **FastAPI** – A modern, high-performance web framework for building APIs with Python 3.6+ based on standard Python type hints. FastAPI is used to create RESTful API endpoints, offering automatic data validation, asynchronous request handling, and interactive API documentation (using Swagger UI), thereby simplifying development and testing.
 
 ---
 
