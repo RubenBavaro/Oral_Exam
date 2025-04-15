@@ -36,7 +36,7 @@
     document.querySelector("#results").innerHTML = "";
     document.querySelector("#feedback").innerHTML = "";
     document.querySelector(".elements").innerHTML = "- - - -Gli interrogati di oggi equivalgono a- - - -:<br/>";
-    fetch("http://localhost:8000/students")
+    fetch("https://oral-exam-panetti.onrender.com/students")
       .then(response => {
         if (!response.ok) {
           throw new Error("FastAPI non lanciato.");
