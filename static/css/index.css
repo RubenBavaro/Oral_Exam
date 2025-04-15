@@ -75,3 +75,14 @@
     width: 100%;
     color: #FFFFFF;
 }
+
+#profile{
+    color: #FFFFFF;
+    margin-bottom: 40px;
+    text-align: center;
+    height: 125px;
+    width: 125px;
+    font-family: 'Inknut Antiqua';
+    font-style: normal;
+    font-weight: bold;
+}
