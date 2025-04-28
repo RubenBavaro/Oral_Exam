@@ -1,36 +1,42 @@
-#hero{
-    background-color: #0028B4;
-    min-width: 100vw;
-    min-height: 120vh;
+body, html {
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
 }
 
-.title{
-    margin-top: 15px;
-    font-family: 'Inknut Antiqua';
-    font-style: normal;
+#hero {
+    background-color: #0028B4;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px 0 100px 0; 
+    position: relative;
+    overflow-x: hidden;
+}
+
+.title {
+    margin-top: 30px;
+    font-family: 'Inknut Antiqua', serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: 93px;
     color: #FFFFFF;
     filter: drop-shadow(0 0 3.5px black) drop-shadow(0 0 3.5px black) drop-shadow(0 0 3.5px black);
     text-align: center !important;
-    display: block !important;
     width: 100% !important;
+    margin-bottom: 30px;
 }
 
-
-.rules{
+.rules {
+    height: 35%;
     width: 100%;
-    height: 250px;
+    padding: 15px;
     margin-top: 5px;
     background: #FFCDCD;
     box-shadow: 10px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    font-family: 'Inknut Antiqua';
-    font-style: normal;
+    font-family: 'Inknut Antiqua', serif;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 41px;
+    font-size: 18px;
+    line-height: 1.5;
     display: flex;
     align-items: center;
     text-align: center;
@@ -38,35 +44,32 @@
     -webkit-text-stroke: 0.4px black;
 }
 
-#button{
+#button {
     width: 100%;
-    height: 77px;
+    padding: 10px 0;
     margin-top: 27px;
     background: #D9D9D9;
     box-shadow: 11px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
-    font-family: 'Inknut Antiqua';
-    font-style: normal;
+    font-family: 'Inknut Antiqua', serif;
     font-weight: bold;
-    font-size: 27px;
-    line-height: 62px;
+    font-size: 24px;
     text-align: center !important;
     color: #000000;
     margin-bottom: 30px;
-    padding-top: 6px;
-}
-#button:hover{
-    transform: scale(110%);
-    font-size: 30px;
-    transition: 1s;
     cursor: pointer;
+    transition: transform 0.5s, font-size 0.5s;
 }
 
-.elements, #results, #feedback{
-    font-family: 'Inknut Antiqua';
-    font-style: normal;
+#button:hover {
+    transform: scale(1.05);
+    font-size: 26px;
+}
+
+.elements, #results, #feedback {
+    font-family: 'Inknut Antiqua', serif;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,13 +79,88 @@
     color: #FFFFFF;
 }
 
-#profile{
+.logo-img {
+    max-width: 100px;
+    height: auto;
+}
+
+#profile {
     color: #FFFFFF;
-    margin-bottom: 40px;
-    text-align: center;
-    height: 125px;
-    width: 125px;
-    font-family: 'Inknut Antiqua';
-    font-style: normal;
+    text-align: right;
+    font-family: 'Inknut Antiqua', serif;
     font-weight: bold;
+    position: relative;
+    z-index: 1000;
+}
+
+#profile img {
+    height: 80px;
+    width: 80px;
+}
+
+.panetti-logo {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.panetti-logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+.top-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 10;
+}
+
+
+
+@media (max-width: 767px) {
+    .title {
+        font-size: 28px;
+        line-height: 1.5;
+        margin-top: 80px;
+    }
+    
+    .rules {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 10px;
+        min-height: 200px;
+    }
+    
+    #button {
+        font-size: 20px;
+        padding: 8px 0;
+    }
+    
+    #button:hover {
+        font-size: 22px;
+    }
+    
+    .elements, #results, #feedback {
+        font-size: 20px;
+    }
+    
+    .logo-img, .panetti-logo img {
+        max-width: 70px;
+    }
+    
+    #profile img {
+        height: 60px;
+        width: 60px;
+    }
+    
+    #profile {
+        right: 5px;
+    }
+    
+    .panetti-logo {
+        bottom: 5px;
+        left: 5px;
+    }
 }
